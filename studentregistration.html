@@ -1,0 +1,218 @@
+<html>
+<head>
+<title><npm>Student Details Form</npm></title>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body bgcolor=#6670987r>
+<form  method="post" name="studentregistration" onsubmit="return(validate())">
+
+<table cellpadding="2" width="20%" align="center"
+	cellspacing="2">
+	
+		 <div class="col-md-12">
+		<h2><center>STUDENT PROFILE</center></h2>
+     		</div>
+        		</div>
+	                 <div class="row">
+	                <div class="col-md-12">
+        		<div class="col-md-6">
+	                 <div class="form-group">
+                                  <label for="photo" class="col-md-4 control-label"><p align="right"><b>Your photo</p></label>
+        	              <div class="col-md-6">
+        	              <p align="right"><img src="" width="100" height="100"></p>
+                                  <p align="right"><b>Only jpg,jpeg format allowed.<br/><b>Minimum file size 50kb and Maximum file size 150kb.</p> 
+                               </div><div class="col-md-2"></div>
+                                  </div>
+                                  </div>
+                              <div class="col-md-6">
+                              <div class="form-group">
+                              </div>
+                            </div>
+                            </div>
+                              </div>
+                            <div id="ProjectListButton" class="answer">
+                           <div class="row">
+                              <div class="col-md-12">
+                            <div class="col-md-6">
+                           <div class="form-group">
+                          <label for="photo" class="col-md-4 control-label"><p align="right"><b>Choose photo</p></label>
+                           <div class="col-md-6">
+                          <p align="right" ><b><input type="file" name="canphoto" id="photo" onchange="readURL(this);"/></p>
+                           </div><div class="col-md-2"></div>
+                           </div>
+                             </div>       
+                           </div>
+                         </div>
+                          </div>
+                       </div>
+                        </div>
+                              		<tr>
+                                          	<td><b>Name</td>
+			<td><input type="text" name="studentname" id="studentname" size="30"></td>
+                                   	                    </tr>
+			<tr>
+			<td><b>Roll no</td>
+			<td><input type="text" name="rollno" id="rollno" size="30"></td>
+			</tr>
+			<tr>
+			<td><b>EmailId</td>
+			<td><input type="text" name="emailid" id="emailid" size="30"></td>
+			</tr>
+			<tr>
+			<td><b>DOB</td>
+			<td><input type="date" name="dob" id="date" size="30"></td>
+			</tr>
+			<tr>
+			<td><b>MobileNo</td>
+			<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+			</tr>
+			<tr>
+			<td><b>Gender</td>
+			<td>
+			<input type="radio" name="sex" value="male" size="10">Male
+			<input type="radio" name="sex" value="Female" size="10">Female
+			</td>
+			</tr>
+			<tr>
+			<td><b>Father Name</td>
+			<td><input type="text" name="fathername" id="fathername"
+			size="30"></td>
+			<td><b>Father occupation</td>
+			<td><input type="text" name="fatheroccupation" id="fatheroccupation"
+                       		 size="30"></td>
+                       		<td><b>Annual income</td>
+			<td><input type="text" name="fannualincome" id="fannualincome"
+                     		   size="30"></td>
+                                                         <td><b>Mobile No</td> 
+                                                         <td><input type="text" name="fathermobileno" id="fathermobileno"
+			size="10"></td>
+			</tr>
+			<tr>
+			<td><b>Mother Name</td>
+			<td><input type="text" name="mothername" id="mothername"
+			size="30"></td>
+		                  <td><b>Mother occupation</td>
+			<td><input type="text" name="motheroccupation" id="motheroccupation"
+                      		  size="30"></td>
+                       		 <td><b>Annual income</td>
+			<td><input type="text" name="mannualincome" id="mannualincome"
+                       		 size="30"></td>
+                                                          <td><b>Mobile No</td>
+                                                         <td><input type="text" name="mothermobileno" id="mothermobileno"
+			size="10"></td>
+			</tr>	
+			<tr>
+			<td><b>Postal Address</td>
+			<td><textarea name="paddress" id="paddress" width=50 height=50>
+				</textarea>
+			</td>
+			</tr>
+			<tr>
+			<td><b>Permanent Address</td>
+			<td><textarea name="address" id="address">
+				</textarea>
+			</td>
+			</tr>
+			<tr>
+			<td><b>City</td>
+			<td><input type="text" name="city" id="city" size="30">
+			</td>
+			</tr>
+			<tr>
+			<td><b>District</td>
+			<td><input type="text" name="district" id="district" size="30">
+			</td>
+			</tr>
+			<tr>
+			<td><b>PinCode</td>
+			<td><input type="text" name="pincode" id="pincode" size="30"></td>
+			</tr>
+	 		<tr>
+			<td><b>Course</td>
+			<td><select name="Course">
+			<option value="-1" selected>select..</option>
+			<option value="Under graduate">UG</option>
+			<option value="Post graduate">PG</option>
+			</select></td>
+			<tr>	
+			<td><b>SSLC school name</td>
+			<td><input type="text" name="sschoolname" id="sschoolname"
+			size="30"></td>
+		
+			<td><b>Medium</td>
+			<td><input type="text" name="smedium" id="smedium"
+ 		                       size="30"></td>
+                        
+                        		<td><b>Year of completion</td>
+			<td><input type="text" name="scompletion" id="scompletion"
+                        		size="20"></td>
+                         		<td><b>Mark%</td> 
+                        		<td><input type="text" name="smark" id="smark"
+			size="10"></td>
+			</tr>
+			</tr>
+			<tr>	
+			<td><b>HSC school name</td>
+			<td><input type="text" name="hschoolname" id="hschoolname"
+			size="30"></td>
+		
+			<td><b>Medium</td>
+			<td><input type="text" name="hmedium" id="hmedium"
+                   			     size="30"></td>
+                                                          <td><b>Year of completion</td>
+			<td><input type="text" name="hcompletion" id="hcompletion"
+                        		size="20"></td>
+                      		<td><b>Mark%</td> 
+                       		 <td><input type="text" name="hmark" id="hmark"
+			size="10"></td>
+			</tr>
+			<tr>	
+	 		<td><b>UG completed college</td>
+			<td><input type="text" name="ugcollegename" id="ugcollegename"
+			size="30"></td>
+		
+			<td><b>Department</td>
+			<td><input type="text" name="ugdepartment" id="ugdepartment"
+		                        size="30"></td>
+                        
+                       		 <td><b>Year of completion</td>
+			<td><input type="text" name="ugcompletion" id="ugcompletion"
+                        		size="30"></td>
+                                                         <td><b>Mark%</td> 
+	                                     <td><input type="text" name="ugmark" id="ugmark"
+			size="10"></td>
+			</tr>
+			<tr>
+			<td><b>Extra curricular activites</td>
+			<td><textarea name="extra" id="extra">
+			</textarea>
+			</td>
+			</tr>
+                                                          <tr>
+			<td><h3>Hobbies</h3></td>		
+			<td><textarea name="hobbies" ></textarea></td>
+			</tr>
+                                       	<tr>
+			<td><h3>Linguistic Proficiency</h3></td>		
+			<td><textarea name="language" ></textarea></td>
+			</tr>
+                                        	<tr>
+			<td><h3>Achievements</h3></td>		
+			<td><textarea name="achievements" ></textarea></td>
+			</tr>
+                                       	<tr>
+			<td><h3>Computer Skills</h3></td>		
+			<td><textarea name="skils"></textarea></td>
+			</tr>
+			<tr>
+			<td>
+		                    <center><input type="reset"></center>
+                                                          </td>
+			<td>
+			<input type="submit" value="Submit Form"/>
+			</td>
+			</tr>
+</table>
+</form>
+</body>
+</html>
